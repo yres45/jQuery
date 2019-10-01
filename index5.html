@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <title>Работа с выборкой </title>
+
+  <head>
+      <script src="jquery-3.4.1.min.js"></script>
+  </head>
+
+  <body>
+      <table>
+          <tr> <td>1</td></tr>
+          <tr> <td>2</td></tr>
+          <tr> <td>3</td></tr>
+          <tr> <td>4</td></tr>
+          <tr> <td>5</td></tr>
+          <tr> <td>6</td></tr>
+          <tr> <td>7</td></tr>
+      </table>
+  </body>
+
+  <script>
+      //.GET ELEMENT.................................................
+
+    //   $(function(){
+    //       var array = $("tr:odd");
+    //       for( var i=0;i<array.length;i++){
+    //           console.log(i.toString()+". "+ array[i].innerHTML);
+    //       }
+    //   });
+
+    // FUNCTION eq....................................................
+
+    //  $(function(){
+    //      var array = $("tr:even");
+    //      array.eq(1).css('background-color','silver');
+    //      array.eq(0).css('background-color','silver');
+    //  });  
+
+    // GEt firts and last element......................................
+
+    //    $(function(){
+    //        var array = $('tr:even');
+    //        var firstEl = array.first();
+    //        console.log("First element: " + firstEl.html());
+    //        var lastEl = array.last();
+    //        console.log("Last element: " + lastEl.html());
+    //    });
+
+    // PEREBOR ELEMENTOV VUBORKY.........................................
+        $(function(){
+
+            $("tr:even").each(function (index,elem){
+                console.log(index + ". " + elem.innerHTML);
+
+            }); 
+                
+          
+        });
+
+
+  </script>
+</html>

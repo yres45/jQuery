@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Мир jQuery</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Слово</td>
+            <td>Перевод</td>
+        </tr>
+        <tr id="result">
+            <td>Cabbage</td>
+            <td>Капуста</td>
+        </tr>
+        <tr>
+            <td>Carrot</td>
+            <td>Морковь</td>
+        </tr>
+        <tr>
+            <td>Potato</td>
+            <td>Картофель</td>
+        </tr>
+        <tr>
+            <td>Tomato</td>
+            <td>Помидор</td>
+        </tr>
+    </table>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+
+           // $("tr:odd").css('background-color', 'brown');
+           //$(":contains('Капуста')").css('color','red');
+           //$('#result:odd:has('td')').css('color','yellow');
+        });
+    </script>
