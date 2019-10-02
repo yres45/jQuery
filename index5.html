@@ -47,15 +47,32 @@
     //    });
 
     // PEREBOR ELEMENTOV VUBORKY.........................................
-        $(function(){
+        // $(function(){
 
-            $("tr:even").each(function (index,elem){
-                console.log(index + ". " + elem.innerHTML);
+        //     $("tr:even").each(function (index,elem){
+        //         console.log(index + ". " + elem.innerHTML);
 
-            }); 
+        //     }); 
                 
           
-        });
+        // });
+
+    // INDEX ELEMENT.......................................................
+
+    // $(function(){
+    //   var  array = $("tr:even");
+    //   var  firstEl = array.first();
+    //   var index = array.index(firstEl);
+    //   console.log(index);
+
+    // });
+
+    //METHOD ADD and aDD new element.............................................
+
+    $(function(){
+
+        var array = $("tr:even").add("tr:odd:first");
+    });
 
 
   </script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <title>Работа с выборкой </title>
+
+  <head>
+      <script src="jquery-3.4.1.min.js"></script>
+  </head>
+
+  <body>
+      <table >
+          <tr class="header"> <td>1</td></tr>
+          <tr> <td>2</td></tr>
+          <tr> <td>3</td></tr>
+          <tr class="header"> <td>4</td></tr>
+          <tr> <td>5</td></tr>
+          <tr> <td>6</td></tr>
+          <tr> <td>7</td></tr>
+      </table>
+
+      <table >
+        <tr> <td>1</td></tr>
+        <tr> <td>2</td></tr>
+        <tr> <td>3</td></tr>
+       
+    </table>
+  </body>
+
+  <script>
+   
+
+    $(function(){
+
+        var array = $(".header").filter("tr");
+        array.css('background-color', 'green');
+    });
+
+
+  </script>
+</html>
